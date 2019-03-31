@@ -21,3 +21,10 @@
   a.当程序不进行异常捕获或处理时，用默认异常处理，输出异常信息
   b.当程序使用try...catch处理或throws抛出异常时，try代码块部分不会像默认处理一样输出错误信息，而是交给catch进行匹配处理。
   c.多个catch代码块的顺序问题：https://blog.csdn.net/yasi_xi/article/details/23871867；
+16、TreeSet类实现的集合中对象必须实现Comparable接口，重写接口的compare to方法，compare to方法介绍：https://blog.csdn.net/ysj4428/article/details/81195846
+17、list、set、map的区别： https://www.cnblogs.com/IvesHe/p/6108933.html
+18、hashmap中存储相同key值的问题，先对比hashcode，再对比相等或equal。都相同就覆盖，不同就存储。
+    https://blog.csdn.net/intersting/article/details/72627353
+    Java中的hashCode方法就是根据一定的规则将与对象相关的信息（比如对象的存储地址，对象的字段等）映射成一个数值，这个数值称作为散列值。
+    https://www.cnblogs.com/dolphin0520/p/3681042.html
+19、
