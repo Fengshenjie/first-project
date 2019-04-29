@@ -1,0 +1,23 @@
+1、保证停留时间=下载时间
+2、如何用message模拟数据包
+3、移动模型要求：
+（1）确定性单条路径，选定起点、终点，依据规则选取路径，路径上选取停留点并设置停留时间。
+（2）概率性多条路径，选定起点、终点，依据不同规则选取多条路径，并设置选择概率，在每条路径上设置停留点和停留时间。
+4、由设计的移动模型输出，用户-候选缓存区域位置（到达概率），用户-候选缓存区域（停留时间）的矩阵。由此计算并选择缓存区域位置。
+5、候选缓存区域位置：（1）用户停留点所在区域（2）用户经过的所有区域
+6、缓存区域效果实现：在正中设置
+7、移动模型设计目标：（1）中间多个停留点，每个停留点（wp）有停留时间；（2）当节点运动到目的地时，设置节点move为inactive。
+                    注：在RandomWaypoint移动模式上实现，源码中是path之间有waitTime，将其修改为wp之间有waitTime。
+8、move过程：
+（1）起点-判断当前时间<nextTimeToMove？return ：（是否有下一个destination？没有则通过getPath获取nextWp，若不成功则return）
+之后move并判断是否到达destination。
+（2）是否到达当前destination？设置下次移动开始时间（当前时间+随机的等待时间），destination设置为当前位置，距离计算归零
+（3）在movementModel中，path有几个wp，则会有几次从当前location到wp的过程（包括wp为当前location的情况）。
+9、host的
+(1)isMovementActive()函数返回此host的move是否可用
+       可以通过在采用的不同movement中重写父类movementModel的isActive（）方法来定义不同情况下isMovementActive（）函数的返回值，
+   以此实现需求场景下enable或disable节点host的move。 
+(2)isRadioActive()函数返回此host的通信是否可用
+       可以通过采用在采用的不同NetworkInterface中重写父类NetworkInterface的isActive（）方法来定义不同情况下isRadioActive()函数的返回值，
+   以此实现需求场景下enable或disable节点host的通信。
+10、
