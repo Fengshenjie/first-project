@@ -40,4 +40,5 @@
 22、在无法跳出循环的情况下，如何使满足某一条件后的操作仅在初次满足条件时执行一次，之后虽满足条件，但不再执行？
     通过设置状态flag变量，在初次满足条件时，flag判断通过，在操作中改变flag状态，使之后的flag判断不通过，以屏蔽之后的多次满足条件。
 23、java中=号赋值时，基础数据类型为直接赋值，而引用数据类型是将内存地址赋给目标（）。https://www.cnblogs.com/nicheken/p/7499475.html
-24、三次握手和四次挥手：https://www.cnblogs.com/shujuxiong/p/9043832.html
+24，三次握手和四次挥手：HTTPS：//www.cnblogs.com/shujuxiong/p/9043832.html
+25，UDP协议过程解析：https://www.cnblogs.com/0Nullptr/articles/6718179.html
