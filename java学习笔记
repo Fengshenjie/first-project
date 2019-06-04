@@ -46,3 +46,4 @@
 26、Integer与int比较：==和equals；https://blog.csdn.net/andyzhaojianhui/article/details/84324466
 27、java scanner读取输入例子：https://blog.csdn.net/yzh372685776/article/details/51965436
 28、switch-case语句，从一个入口进入后，将不再判断，会执行语句（包括default中语句）直到遇到break；只要程序能执行到default语句，则一定会执行default中的语句。
+29、接口体内只能声明常量字段和抽象方法，并且被隐式声明为public，static，final.
