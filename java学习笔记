@@ -56,6 +56,6 @@
 34、要想访问到一个类（对象）的成员变量或属性，需要：1、类与类之间满足成员变量访问修饰符的范围；2、所实例化的对象本身拥有此属性且可以访问到（继承且可见）。
 35、用户自定义异常可以是运行时异常也可以时非运行时异常。https://www.cnblogs.com/AlanLee/p/6104492.html
 36、异常处理的两种方式：try...catch；throw，throws。及其处理流程。try...catch语法规则：https://blog.csdn.net/youngstar70/article/details/62227032。
-37、java同步机制以及常量池内存介绍：https://www.cnblogs.com/lipeineng/p/5917439.html
+37、java同步机制以及常量池内存介绍：https://www.cnblogs.com/lipeineng/p/5917439.html。其中的例子很重要，对于常量在内存中的存储。
     https://blog.csdn.net/zhangsanfeng2009/article/details/80900963
 
