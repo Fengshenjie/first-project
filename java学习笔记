@@ -59,4 +59,5 @@
 37、java同步机制以及常量池内存介绍：https://www.cnblogs.com/lipeineng/p/5917439.html。其中的例子很重要，对于常量在内存中的存储。
     对于局部变量，如果是基本类型，会把值直接存储在栈；
     https://blog.csdn.net/zhangsanfeng2009/article/details/80900963
-
+38、String的两种赋值方式的解释：https://blog.csdn.net/weixin_34413802/article/details/88009934
+    https://www.zhihu.com/question/29884421/answer/113785601
