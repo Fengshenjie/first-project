@@ -61,3 +61,5 @@
     https://blog.csdn.net/zhangsanfeng2009/article/details/80900963
 38、String的两种赋值方式的解释：https://blog.csdn.net/weixin_34413802/article/details/88009934
     https://www.zhihu.com/question/29884421/answer/113785601
+39、数值包装类的 parse数据类型 方法（parseInt、Double、char等）均返回基础数据类型。valueOf方法除了Boolean返回字符串代表的基础数据类型外，
+    其他的包装类均返回相应的包装类对象而非基础数据类型。注：Boolean的字符串参数构造方法；getInteger类似的方法和valueOf方法的区别。
