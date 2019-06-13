@@ -10,6 +10,7 @@
 4、jvm内存堆、栈、方法区：https://www.cnblogs.com/heyanan/p/6125030.html
 5、object类的getClass()方法默认包含（this）。当一个类转换为字符串或字符串连接时，将自动调用的toString()方法。
 6、equals()方法在object类中与“==”一致，要比较对象内容而非引用地址，则需重写此方法。
+    equals、hashcode、==的区别比较：https://www.cnblogs.com/skywang12345/p/3324958.html
 7、向上转型：https://blog.csdn.net/huyuyang6688/article/details/42566043
   子类对象时父类的一个实例；向下转型：父类对象不一定是子类的实例，直接赋予会发生编译器错误，需要使用显示类型转换，向编译器知名父类对象转换为哪一类子类对象。
 8、方法的重载：区别于方法的重写，依据参数类型不同、参数个数不同、参数顺序不同构成重载。注：在同一个类中允许同时存在一个以上的同名方法。
@@ -63,3 +64,13 @@
     https://www.zhihu.com/question/29884421/answer/113785601
 39、数值包装类的 parse数据类型 方法（parseInt、Double、char等）均返回基础数据类型。valueOf方法除了Boolean返回字符串代表的基础数据类型外，
     其他的包装类均返回相应的包装类对象而非基础数据类型。注：Boolean的字符串参数构造方法；getInteger类似的方法和valueOf方法的区别。
+40、集合、map中区分两个对象是否为重复对象是根据hashcode判断的。equals相等是hashcode相等的充分不必要条件。
+    如果a.equals(b) 那么设计的时候应该要保证a.hashCode() == b.hashCode() ，这个是设计规范。不同的equals重写方法，对应不同的hashcode重写方法。
+    https://blog.csdn.net/weixin_40321672/article/details/80643236
+    当一个对象作为 key 被加进 HashMap 或者 HashSet 以后，使用 HashMap 和 HashSet 期间，这个对象的 equals 和 hashCode 不发生变化就行了。
+    在设计hashCode方法和equals方法的时候，如果对象中的数据易变，则最好在equals方法和hashCode方法中不要依赖于该字段。
+    hashCode方法的存在是为了减少equals方法的调用次数，从而提高程序效率。
+    https://www.cnblogs.com/dolphin0520/p/3681042.html
+    只需要重写hashCode方法，让equals方法和hashCode方法始终在逻辑上保持一致性。
+41、Java的native方法：https://www.cnblogs.com/xingzc/p/6078768.html
+
