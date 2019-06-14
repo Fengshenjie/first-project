@@ -53,6 +53,7 @@
 30、final修饰的属性变量必须在定义的时候或者构造函数中被初始化，static final修饰的变量必须在定义的时候进行初始化。
 31、java方法区详解：https://blog.csdn.net/dshf_1/article/details/87171171
 32、java编译期间的操作；https://blog.csdn.net/LVXIANGAN/article/details/82985312
+    java编译和运行过程详解：https://www.cnblogs.com/superyc/p/9987793.html
 33、重写：返回值和形参不能改变；重载：方法名相同，参数列表必须不同。
 34、要想访问到一个类（对象）的成员变量或属性，需要：1、类与类之间满足成员变量访问修饰符的范围；2、所实例化的对象本身拥有此属性且可以访问到（继承且可见）。
 35、用户自定义异常可以是运行时异常也可以时非运行时异常。https://www.cnblogs.com/AlanLee/p/6104492.html
@@ -73,4 +74,7 @@
     https://www.cnblogs.com/dolphin0520/p/3681042.html
     只需要重写hashCode方法，让equals方法和hashCode方法始终在逻辑上保持一致性。
 41、Java的native方法：https://www.cnblogs.com/xingzc/p/6078768.html
-
+42、每个类有自己的常量池：https://www.cnblogs.com/superyc/p/9975254.html
+    https://www.cnblogs.com/dreamroute/p/3650399.html
+43、内部类：https://www.cnblogs.com/chenssy/p/3388487.html
+    
