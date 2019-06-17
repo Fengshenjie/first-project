@@ -81,3 +81,9 @@
     抽象类中抽象方法的访问权限修饰符要保证子类可以见，理论上default、protected、public都可以；但default不可显式定义，且在包外使用会报错。
     https://blog.csdn.net/hhx_echo/article/details/76165537
     接口中的方法必须是public abstract ，成员变量必须是public static final。
+45、匿名内部类特性：必须继承父类或者实现接口；只用一次；没有名字所以没有构造方法，不能向下转型。
+    https://blog.csdn.net/L_BestCoder/article/details/77676342
+46、局部内部类、匿名内部类（其实属于局部内部类）中使用外部的局部变量时，此变量需要final修饰。
+    https://www.zhihu.com/question/21395848；理解时对比普通方法、成员内部类，闭包获取外部参数需要持有对外部的引用，而局部和匿名内部类采用了
+    copy而非持有外部引用，从而造成内外参数不一致问题。
+    
