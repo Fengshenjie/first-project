@@ -94,3 +94,5 @@
     https://www.cnblogs.com/DarrenChan/p/5738957.html
 47、default场景与default关键字的区别
 48、浮点数的表示过程：https://www.cnblogs.com/keanuyaoo/p/3324937.html
+49、对于什么时候会在常量池存储字符串对象，我想我们可以基本得出结论: 1. 显示调用String的intern方法的时候; 2. 直接声明字符串字面常量的时候，例如: String a = "aaa";
+    字符串直接常量相加的时候，例如: String c = "aa" + "bb";  其中的aa/bb只要有任何一个不是字符串字面常量形式，都不会在常量池生成"aabb". 且此时jvm做了优化，不//   会同时生成"aa"和"bb"在字符串常量池中
