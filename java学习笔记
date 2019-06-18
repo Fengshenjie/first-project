@@ -63,6 +63,8 @@
     https://blog.csdn.net/zhangsanfeng2009/article/details/80900963
 38、String的两种赋值方式的解释：https://blog.csdn.net/weixin_34413802/article/details/88009934
     https://www.zhihu.com/question/29884421/answer/113785601
+    基础数据类型的内存存放位置：
+    https://blog.csdn.net/liyuguanguan/article/details/79619254
 39、数值包装类的 parse数据类型 方法（parseInt、Double、char等）均返回基础数据类型。valueOf方法除了Boolean返回字符串代表的基础数据类型外，
     其他的包装类均返回相应的包装类对象而非基础数据类型。注：Boolean的字符串参数构造方法；getInteger类似的方法和valueOf方法的区别。
 40、集合、map中区分两个对象是否为重复对象是根据hashcode判断的。equals相等是hashcode相等的充分不必要条件。
@@ -91,3 +93,4 @@
     如果是外围类的成员变量就不需要是final的，因为内部类本身都会含有一个外围了的引用（外围类.this）
     https://www.cnblogs.com/DarrenChan/p/5738957.html
 47、default场景与default关键字的区别
+48、浮点数的表示过程：https://www.cnblogs.com/keanuyaoo/p/3324937.html
