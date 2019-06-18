@@ -96,3 +96,9 @@
 48、浮点数的表示过程：https://www.cnblogs.com/keanuyaoo/p/3324937.html
 49、对于什么时候会在常量池存储字符串对象，我想我们可以基本得出结论: 1. 显示调用String的intern方法的时候; 2. 直接声明字符串字面常量的时候，例如: String a = "aaa";
     字符串直接常量相加的时候，例如: String c = "aa" + "bb";  其中的aa/bb只要有任何一个不是字符串字面常量形式，都不会在常量池生成"aabb". 且此时jvm做了优化，不//   会同时生成"aa"和"bb"在字符串常量池中
+    String s1=“ab”+“cd”；生成了几个对象
+    String s2=new String（“ab”+“cd”）；生成几个对象
+    intern（）方法的过程原理：通过equals方法比较存在与否。
+    https://blog.csdn.net/weixin_39460458/article/details/79982765（评论区是正确的，存储的是引用）
+    https://www.cnblogs.com/niew/p/9597379.html
+    https://www.cnblogs.com/Kidezyq/p/8040338.html
