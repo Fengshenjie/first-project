@@ -86,4 +86,8 @@
 46、局部内部类、匿名内部类（其实属于局部内部类）中使用外部的局部变量时，此变量需要final修饰。
     https://www.zhihu.com/question/21395848；理解时对比普通方法、成员内部类，闭包获取外部参数需要持有对外部的引用，而局部和匿名内部类采用了
     copy而非持有外部引用，从而造成内外参数不一致问题。
-    
+    内部类的生命周期比局部变量的长。
+    https://blog.csdn.net/qq_38238296/article/details/83315263
+    如果是外围类的成员变量就不需要是final的，因为内部类本身都会含有一个外围了的引用（外围类.this）
+    https://www.cnblogs.com/DarrenChan/p/5738957.html
+47、default场景与default关键字的区别
