@@ -102,3 +102,5 @@
     https://blog.csdn.net/weixin_39460458/article/details/79982765（评论区是正确的，存储的是引用）
     https://www.cnblogs.com/niew/p/9597379.html
     https://www.cnblogs.com/Kidezyq/p/8040338.html
+50、String类的结构和构造放法：https://blog.csdn.net/weixin_36675031/article/details/83013873。
+    String类内部有char[]数组成员变量，实例化时利用数组复制对其进行了赋值，而不是引用指向的方式。
